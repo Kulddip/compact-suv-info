@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #f1f1f1;
+    margin: auto%;
+    height: 100px;
+}
+
+#container{
+    display: flex;
+}
+
+#sidebar{
+    display: flex;
+    width: auto;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    margin: auto;
+    overflow-x: auto; /* Enable vertical scrollbar when needed */
+    max-height: 200vh; /* Set maximum height of the sidebar */
+    justify-content: flex-start;
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* hide car details by default */
+.car-details{
+    display: none;
+}
+
+/* Show car details when corresponding anchor link is targeted */
+.car-details:target{
+    display: block;
+}
+
+/* style anchor links on sidebar */
+#sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#sidebar a:hover{
+    background-color: #8d1212;
+}
+
+#sidebar img:hover{
+    scale: 1.2;
+    transition: transform(1.2s);
+}
